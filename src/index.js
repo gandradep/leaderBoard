@@ -19,9 +19,7 @@ submitForm.addEventListener('click', async (e) => {
 });
 
 refresh.addEventListener('click', async () => {
-  let data = [];
-  await getScores().then((response) => data = response.result);
-  display(data);
+  await getScores().then((response) => display(response.result));
 });
 
 /* firefox is buggy with input type number so we check with js */
