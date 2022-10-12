@@ -1,6 +1,6 @@
 # LeaderBoard
 
-> Setting up the project for the Leaderboard list app.
+> Hitting up the project API for the Leaderboard list app. You can submit scores and get the scores submitted.
 
 >To run the project download the repository and install all the dependencies.
 
