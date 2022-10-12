@@ -10,6 +10,9 @@ const refresh = document.querySelector('button');
 const score = document.getElementById('score');
 const message = document.getElementById('message');
 
+getScores().then(response => display(response.result));
+
+
 submitForm.addEventListener('click', async (e) => {
   e.preventDefault();
   const name = e.target.parentElement.firstElementChild;
