@@ -4,7 +4,7 @@ export const display = (data) => {
   table.innerText = '';
   data.forEach((item) => {
     const row = document.createElement('tr');
-    const td = document.createElement('td');      
+    const td = document.createElement('td');
     td.innerHTML = `${item.user}: ${item.score}`;
     row.appendChild(td);
     table.appendChild(row);
