@@ -3,6 +3,8 @@ import { addScore } from './modules/addScore.js';
 
 import { getScores } from './modules/getScores.js';
 
+import { display } from './modules/displayScore.js'
+
 const submitForm = document.getElementById('submit');
 const refresh = document.querySelector('button');
 const score = document.getElementById('score');
@@ -16,7 +18,9 @@ submitForm.addEventListener('click', async (e) => {
 });
 
 refresh.addEventListener('click', async (e) => {
-  await getScores().then(response => console.log(response));
+  let data = [];
+  await getScores().then(response => data=response.result);
+  display(data);
 });
 
 /* firefox is buggy with inut type number so we check with js */
