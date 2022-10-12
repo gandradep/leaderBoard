@@ -1,13 +1,27 @@
 import './style.css';
 import { addScore } from './modules/addScore.js';
 
-const submitForm = document.getElementById('submit');
+import { getScores } from './modules/getScores.js';
 
-submitForm.addEventListener('click', (e) => {
+const submitForm = document.getElementById('submit');
+const refresh = document.querySelector('button');
+const score = document.getElementById('score');
+const message = document.getElementById('message');
+
+submitForm.addEventListener('click', async (e) => {
   e.preventDefault();
   const name = e.target.parentElement.firstElementChild;
   const score = name.nextElementSibling;
-  console.log(name.value);
-  console.log(score.value);
-  addScore(name.value, score.value);
+  await addScore(name.value, Number(score.value)).then(response => console.log(response));
+});
+
+refresh.addEventListener('click', async (e) => {
+  await getScores().then(response => console.log(response));
+});
+
+/* firefox is buggy with inut type number so we check with js */
+score.addEventListener('keypress', (event) => {
+  var aCode = event.key ? event.key : event.keyCode;
+  if (aCode > 31 && (aCode < 48 || aCode > 57)) return false;
+  return true;
 });
