@@ -16,8 +16,8 @@ submitForm.addEventListener('click', async (e) => {
   const name = e.target.parentElement.firstElementChild;
   const score = name.nextElementSibling;
   await addScore(name.value, Number(score.value));
-  name.value = "";
-  score.value = "";
+  name.value = '';
+  score.value = '';
 });
 
 refresh.addEventListener('click', async () => {
