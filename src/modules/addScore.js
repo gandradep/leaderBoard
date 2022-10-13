@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-export const addScore = (name, score) => fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0c1YpfazrDql64Q7vk4a/scores',
+export const addScore = (name, score) => fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/53cyDqO5JM4l6EFfiZKf/scores',
   {
     method: 'POST',
     body: JSON.stringify({

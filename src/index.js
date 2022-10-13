@@ -25,7 +25,7 @@ submitForm.addEventListener('click', async (e) => {
     error.innerText = 'Use numbers for score value.';
   } else {
     error.innerText = '';
-    added.innerText = 'Score was added to API!!';
+    added.innerText = 'Score was added successfully!!';
   }
   name.value = '';
   score.value = '';
