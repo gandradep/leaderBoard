@@ -7,10 +7,8 @@ import { display } from './modules/displayScore.js';
 
 const submitForm = document.getElementById('submit');
 const refresh = document.querySelector('button');
-const score = document.getElementById('score');
 const error = document.getElementById('error');
 const added = document.getElementById('added');
-
 
 getScores().then((response) => display(response.result));
 
@@ -20,7 +18,7 @@ submitForm.addEventListener('click', async (e) => {
   const score = name.nextElementSibling;
   const result = await addScore(name.value, Number(score.value));
 
-  if(result.status == 400){
+  if (result.status === 400) {
     added.innerText = '';
     error.innerText = 'Use numbers for score value.';
   } else {

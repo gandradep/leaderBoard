@@ -10,7 +10,7 @@
 body {
   padding-left: 2%;
   padding-bottom: 2%;
-  background: radial-gradient(circle, rgba(250,212,52,1) 83%, rgba(218,177,52,1) 100%);
+  background: radial-gradient(circle, rgba(250, 212, 52, 1) 83%, rgba(218, 177, 52, 1) 100%);
 }
 
 .shadow {
@@ -83,7 +83,7 @@ tr:nth-child(odd) {
 }
 
 tr:nth-child(even) {
-  background-color: #FBD84B;
+  background-color: #fbd84b;
 }
 
 form {
@@ -96,6 +96,7 @@ input {
   padding: 5px;
   font-size: 1.15rem;
 }
+
 .border {
   border: 2px solid #000;
 }
