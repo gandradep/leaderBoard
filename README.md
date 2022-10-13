@@ -26,7 +26,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 - [fontawesome](https://fontawesome.com) for the icons.
-- @rukundoeric
+- [@rukundoeric](https://github.com/rukundoeric)
 
 ## 📝 License
 
