@@ -19,6 +19,14 @@ body {
   display: flex;
 }
 
+#error {
+  color: red;
+}
+
+#added {
+  color: green;
+}
+
 .headlineTable {
   justify-content: space-between;
 }

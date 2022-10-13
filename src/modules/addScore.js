@@ -10,5 +10,13 @@ export const addScore = (name, score) => fetch('https://us-central1-js-capstone-
       'Content-type': 'application/json; charset=UTF-8',
     },
   })
-  .then((response) => response.json())
-  .then((json) => json);
+  .then( async (response) => {
+
+    // return responseObj;
+    let resPromise = await response.json();
+    let responseObj = {
+      status: response.status,
+      ...resPromise,
+    }
+    return responseObj;
+  });
