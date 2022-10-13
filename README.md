@@ -2,7 +2,9 @@
 
 > This Leaderboard app allows you to get and send scores to an API.
 
->To run the project download the repository and install all the dependencies.
+>To run the project download the repository and install all the dependencies: `npm install`
+>Then run webpack: `npm start`
+
 
 
 ## Built With
