@@ -1,6 +1,6 @@
 # LeaderBoard
 
-> Hitting up the project API for the Leaderboard list app. You can submit scores and get the scores submitted.
+> This Leaderboard app allows you to get and send scores to an API.
 
 >To run the project download the repository and install all the dependencies.
 
@@ -25,7 +25,7 @@
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- [fontawesome](https://fontawesome.com) for the icons.
 
 ## 📝 License
 
