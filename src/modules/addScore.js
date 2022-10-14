@@ -10,16 +10,6 @@ export const addScore = (name, score) => fetch('https://us-central1-js-capstone-
       'Content-type': 'application/json; charset=UTF-8',
     },
   })
-<<<<<<< HEAD
-  .then( async (response) => {
-
-    // return responseObj;
-    let resPromise = await response.json();
-    let responseObj = {
-      status: response.status,
-      ...resPromise,
-    }
-=======
   .then(async (response) => {
     // return responseObj;
     const resPromise = await response.json();
@@ -27,6 +17,5 @@ export const addScore = (name, score) => fetch('https://us-central1-js-capstone-
       status: response.status,
       ...resPromise,
     };
->>>>>>> finalTouches
     return responseObj;
   });
