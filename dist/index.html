@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4b8fe0d7fd.js" crossorigin="anonymous"></script>
     <title>Wbpack Exercise</title>
 <script defer src="main.js"></script></head>
 <body>
@@ -10,37 +11,22 @@
     <section class="dFlex">
       <article id="scores" class="dFlex">
         <div class="dFlex headlineTable">
-          <h2>Recent scores  </h2>
-          <button class="border shadow" type="button" name="button">Refresh</button>
+          <h2>Recent scores <i class="fa-solid fa-trophy"></i> </h2>
+          <button class="border shadow bold" type="button" name="button"><i class="fa-solid fa-arrows-rotate"></i></button>
         </div>
 
-        <table class="border">
-          <tr>
-            <td>Name: 100</td>
-          </tr>
-          <tr>
-            <td>Name: 20</td>
-          </tr>
-          <tr>
-            <td>Name: 50</td>
-          </tr>
-          <tr>
-            <td>Name: 78</td>
-          </tr>
-          <tr>
-            <td>Name: 125</td>
-          </tr>
-          <tr>
-            <td>Name: 77</td>
-          </tr>
+        <table id="result" class="border">
+
         </table>
       </article>
       <article id="enterScore" class="dFlex">
-        <h2>Add your score</h2>
-        <form class="dFlex" action="index.html" method="post">
+        <h2>Add your score <i class="fa-solid fa-meteor"></i></h2>
+        <p id="error"></p>
+        <p id="added"></p>
+        <form class="dFlex">
           <input class="border" type="text" name="namne"  placeholder="Your name">
-          <input class="border" type="text" name="score"  placeholder="Your score">
-          <input class="border shadow" id="submit" type="submit" name="" value="Submit">
+          <input id="score" class="border" type="number" name="score"  placeholder="Your score" required>
+          <button class="bold border shadow" id="submit" type="submit">Submit</button>
         </form>
       </article>
     </section>
