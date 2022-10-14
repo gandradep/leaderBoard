@@ -5,7 +5,12 @@ export const display = (data) => {
   data.forEach((item) => {
     const row = document.createElement('tr');
     const td = document.createElement('td');
-    td.innerHTML = `${item.user}: ${item.score}`;
+    const name = document.createElement('span');
+    const score = document.createElement('span');
+    name.innerHTML = `${item.user} :`;
+    name.classList.add('bold');
+    score.innerHTML = item.score;
+    td.append(name, score);
     row.appendChild(td);
     table.appendChild(row);
   });

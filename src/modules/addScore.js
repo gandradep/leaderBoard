@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-export const addScore = (name, score) => fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0c1YpfazrDql64Q7vk4a/scores',
+export const addScore = (name, score) => fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/53cyDqO5JM4l6EFfiZKf/scores',
   {
     method: 'POST',
     body: JSON.stringify({
@@ -10,6 +10,7 @@ export const addScore = (name, score) => fetch('https://us-central1-js-capstone-
       'Content-type': 'application/json; charset=UTF-8',
     },
   })
+<<<<<<< HEAD
   .then( async (response) => {
 
     // return responseObj;
@@ -18,5 +19,14 @@ export const addScore = (name, score) => fetch('https://us-central1-js-capstone-
       status: response.status,
       ...resPromise,
     }
+=======
+  .then(async (response) => {
+    // return responseObj;
+    const resPromise = await response.json();
+    const responseObj = {
+      status: response.status,
+      ...resPromise,
+    };
+>>>>>>> finalTouches
     return responseObj;
   });

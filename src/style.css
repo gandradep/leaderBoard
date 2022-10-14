@@ -9,10 +9,16 @@
 
 body {
   padding-left: 2%;
+  padding-bottom: 2%;
+  background: radial-gradient(circle, rgba(250, 212, 52, 1) 83%, rgba(218, 177, 52, 1) 100%);
 }
 
 .shadow {
   box-shadow: 2px 2px black;
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 .dFlex {
@@ -37,6 +43,10 @@ h1 {
   margin-bottom: 50px;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 section {
   width: 100%;
   justify-content: space-around;
@@ -55,16 +65,25 @@ table {
 button {
   background-color: white;
   padding: 0 1rem;
+  font-size: 1.15rem;
+}
+
+.bold {
   font-weight: 600;
 }
 
 td {
   text-align: left;
   padding: 8px;
+  font-size: 1.15rem;
+}
+
+tr:nth-child(odd) {
+  background-color: orange;
 }
 
 tr:nth-child(even) {
-  background-color: #ddd;
+  background-color: #fbd84b;
 }
 
 form {
@@ -73,11 +92,15 @@ form {
   row-gap: 20px;
 }
 
+input {
+  padding: 5px;
+  font-size: 1.15rem;
+}
+
 .border {
   border: 2px solid #000;
 }
 
 #submit {
   width: 50%;
-  font-weight: 600;
 }

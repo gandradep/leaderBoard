@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4b8fe0d7fd.js" crossorigin="anonymous"></script>
     <title>Wbpack Exercise</title>
 </head>
 <body>
@@ -10,8 +11,8 @@
     <section class="dFlex">
       <article id="scores" class="dFlex">
         <div class="dFlex headlineTable">
-          <h2>Recent scores  </h2>
-          <button class="border shadow" type="button" name="button">Refresh</button>
+          <h2>Recent scores <i class="fa-solid fa-trophy"></i> </h2>
+          <button class="border shadow bold" type="button" name="button"><i class="fa-solid fa-arrows-rotate"></i></button>
         </div>
 
         <table id="result" class="border">
@@ -19,13 +20,17 @@
         </table>
       </article>
       <article id="enterScore" class="dFlex">
+<<<<<<< HEAD
         <h2>Add your score</h2>
+=======
+        <h2>Add your score <i class="fa-solid fa-meteor"></i></h2>
+>>>>>>> finalTouches
         <p id="error"></p>
         <p id="added"></p>
         <form class="dFlex">
           <input class="border" type="text" name="namne"  placeholder="Your name">
           <input id="score" class="border" type="number" name="score"  placeholder="Your score" required>
-          <input class="border shadow" id="submit" type="submit" name="" value="Submit">
+          <button class="bold border shadow" id="submit" type="submit">Submit</button>
         </form>
       </article>
     </section>
